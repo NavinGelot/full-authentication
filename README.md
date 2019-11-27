@@ -1,5 +1,8 @@
 ### oauth
 
+ reference
+ https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-2/
+
  This module is based on spring boot.
  
  It has perpose to serve authentication and based on role allow user to access api's
