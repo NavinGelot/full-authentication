@@ -1,1 +1,15 @@
-# full-authentication
+### oauth
+
+ reference
+ https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-2/
+
+ This module is based on spring boot.
+ 
+ It has perpose to serve authentication and based on role allow user to access api's
+
+ visit this link for only authentication and role based api access part: 
+ https://github.com/NavinGelot/authentication-java
+
+ This module also serve many rest api's to view details in UI which is not available in above linked module for simplicity.
+ 
+ 
