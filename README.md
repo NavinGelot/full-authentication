@@ -6,13 +6,13 @@
  
  signup-admin endpoint is not enabled for ui, so can be created from postman by following valid payload json
  
- Accessibility:
+### Accessibility:
  
-  ::USER_ROLE::
+##### ::USER_ROLE::
    1) add-task
    2) list-task
    
-  ::ADMIN_ROLE::
+##### ::ADMIN_ROLE::
     1) add-task
     2) remove-task
     3) list-task
