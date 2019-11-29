@@ -1,7 +1,9 @@
 import {combineReducers} from "redux";
-import test from "./test";
+import task from "./taskReducer";
+import auth from "./authReducer";
 
 
 export default combineReducers({
-    test
+    task,
+    auth
 });

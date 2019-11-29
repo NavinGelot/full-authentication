@@ -1,18 +1,19 @@
 import {authenticationService} from "../service/AuthenticationService";
+import {history} from '../utility/history'
+import {ADD_AUTHENTICATION_MESSAGE} from "./actions";
 
-
-export const performLogin = (username, password) => {
+export const performSignUp = (requestData) => {
     return (dispatch) => {
-        authenticationService.performLogin(username, password).then(response => {
-            console.log(response)
-        })
+        authenticationService.performSignUp(requestData).then(response => {
+            history.push("/");
+        }).catch(err =>
+            dispatch({type: ADD_AUTHENTICATION_MESSAGE, message: err.toString()})
+        )
     }
 };
 
-export const performSignUp = (username, password) => {
+export const performLogout = () => {
     return (dispatch) => {
-        authenticationService.performSignUp(username, password).then(response => {
-            console.log(response)
-        })
+        authenticationService.performLogout()
     }
 };

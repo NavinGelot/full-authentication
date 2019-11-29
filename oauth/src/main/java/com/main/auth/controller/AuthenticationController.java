@@ -75,6 +75,7 @@ public class AuthenticationController {
         return register(signUpDTO, RoleName.ROLE_ADMIN);
     }
 
+    // responsible for creating account based on given payload and role
     private ResponseEntity<?> register(SignUpDTO signUpDTO, RoleName roleName) {
         if (userRepository.existsByUsername(signUpDTO.getUsername())) {
             return new ResponseEntity(new ApiResponse(false, "Username is already taken!"),
@@ -86,7 +87,6 @@ public class AuthenticationController {
                     HttpStatus.BAD_REQUEST);
         }
 
-        // Creating user's account
         User user = new User(signUpDTO.getName(), signUpDTO.getUsername(),
                 signUpDTO.getEmail(), signUpDTO.getPassword());
 
