@@ -2,10 +2,10 @@
 #####   ************************************************
 ### Index.js
 
-    starting point where following configuration been done
+    starting point where following configuration has been done
     
     >>> redux 
-        (for manage applicatin state)
+        (for manage application state)
     >>> cookie 
         (for storing token and basic details)
     >>> Routing
@@ -17,12 +17,12 @@
 ### MyApplication
     
     > 1: componentWillMount
-        checkLoginStatus method will be call it will take cookie
-        and try to check is user is exist or not 
+        checkLoginStatus method will be call, it will take cookie
+        and try to check is user is exist with token specified
         based on method response it will set following three fields:
         
         1: authenticationProcess: "done"
-            always when process finis it will be mark as done 
+            always when process finish it will be mark as done 
             so we can process render code otherwise we will return null.
         
         2: isAuthenticated: true/false
@@ -36,7 +36,7 @@
             links
             
         3: currentLogin
-            If authentication successed backend will give
+            If authentication succeed backend will give
             some set of user details to identify which details
             to show based on role...
             
@@ -64,12 +64,12 @@
     last we have to make changes inside <AuthenticatedUser/>
     component where based on admin/user add condition based component
     
-    That's at
+    done
 #####   ************************************************    
 ### Ending
 
     Once we have logged in component we can perform all basic flow
-    and it will be handled, there will no changes..
+    and it will be handled, there will be no changes..
 #####   ************************************************
     
     
