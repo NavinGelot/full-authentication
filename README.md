@@ -1,3 +1,24 @@
+
+# initial setup 
+ 
+ Require Node version >= 10
+ follow project details from md folder for mysql and rest of them
+ 
+ signup-admin endpoint is not enabled for ui, so can be created from postman by following valid payload json
+ 
+ Accessibility:
+ 
+  ::USER_ROLE::
+   1) add-task
+   2) list-task
+  ::ADMIN_ROLE::
+    1) add-task
+    2) remove-task
+    3) list-task
+
+ 
+
+
 ### oauth
 
  reference
